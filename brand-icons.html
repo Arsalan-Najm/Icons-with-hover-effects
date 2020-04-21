@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+<style type="text/css">
+body{
+margin:0;
+padding:0;
+height:100vh;
+align-items:center;
+justify-content:center;
+display:flex;
+background:#333;
+}
+.social a{
+display:inline-flex;
+text-decoration:none;
+width:60px;
+height:60px;
+color:#fff;
+align-items:center;
+justify-content:center;
+position:relative;
+margin:0 8px;
+}
+.social a:before{
+content:"";
+height:60px;
+width:60px;
+position: absolute;
+background:linear-gradient(45deg,#22a6b3,#30336b);
+border-radius:50%;
+z-index:-1;
+-webkit-transition:0.3s ease-in;
+}
+.social a:hover:before{
+-webkit-transform:scale(0);
+}
+.social a i{
+-webkit-transition:0.3s ease-in;
+}
+.social a:hover i{
+background:linear-gradient(45deg,#22a6b3,#30336b); 
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+-webkit-transform:scale(2.5);
+}
+</style>
+</head>
+<body>
+<div class="social">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-whatsapp"></i></a>
+<a href="#"><i class="fa fa-youtube-play"></i></a>
+<a href="#"><i class="fa fa-github"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+</div>
+</body>
+</html>
